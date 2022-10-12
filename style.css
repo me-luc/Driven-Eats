@@ -14,7 +14,7 @@ body {
 }
 /*---- CONFIGURAÇÕES DO CELULAR ----*/
 .celular-config {
-	width: 414px;
+	width: 100%;
 	background-color: #eeeeee;
 }
 
@@ -25,7 +25,7 @@ body {
 	height: 92px;
 
 	box-sizing: border-box;
-	padding-left: 21px;
+	padding-left: 25px;
 }
 .topo h1 {
 	font-family: "Righteous";
@@ -48,7 +48,7 @@ h2 {
 
 /*---- CONTAINER OPCOES ----*/
 .container-opcoes {
-	margin-left: 19px;
+	margin-left: 25px;
 }
 
 /*------ GERAL BLOCOS ------*/
@@ -74,6 +74,7 @@ h2 {
 	border-radius: 9px;
 
 	padding: 14px;
+	margin-right: 16px;
 	box-sizing: border-box;
 }
 
@@ -96,6 +97,7 @@ h2 {
 	font-weight: 400;
 	font-size: 26px;
 	line-height: 32px;
+	margin-bottom: 17px;
 }
 .titulo-prato {
 	font-family: "Roboto";

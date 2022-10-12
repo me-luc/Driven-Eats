@@ -1,0 +1,10 @@
+/*RESPONSIVIDADE PARA TELAS GRANDES*/
+@media (min-width: 1020px) {
+	/*DIMENSOES DA MARGEM ESQUERDA*/
+	.topo {
+		padding-left: 50px;
+	}
+	.container-opcoes {
+		margin-left: 50px;
+	}
+}
