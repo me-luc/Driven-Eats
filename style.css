@@ -24,6 +24,10 @@ body {
 	width: 100%;
 	height: 92px;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	box-sizing: border-box;
 	padding-left: 25px;
 }
@@ -61,10 +65,52 @@ h2 {
 /*---- OPCAO PRATO ----*/
 
 /*---- OPCAO BEBIDA ----*/
+.bloco-bebida .descricao {
+	margin: 10px 0;
+}
+.bloco-bebida img {
+	object-fit: scale-down;
+}
 
 /*---- OPCAO SOBREMESA ----*/
+.bloco-sobremesa {
+	margin-bottom: 118px;
+}
 
 /*---- BARRA INFERIOR ----*/
+.barra-inferior {
+	width: 100%;
+	height: 75px;
+	background-color: #ffffff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.barra-inferior button {
+	width: 75%;
+	height: 58px;
+
+	background: #cbcbcb;
+	border: none;
+	border-radius: 50px;
+	box-sizing: border-box;
+	padding: 0 50px 0 50px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.018em;
+
+	color: #ffffff;
+}
 
 /*--------- OPCAO -----------*/
 .opcao {
@@ -76,6 +122,8 @@ h2 {
 	padding: 14px;
 	margin-right: 16px;
 	box-sizing: border-box;
+
+	box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
 /*--------- BLOCO-OPCOES ---------*/
