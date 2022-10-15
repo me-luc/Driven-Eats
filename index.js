@@ -37,49 +37,78 @@ function calcularPreco() {
 }
 //FUNÇÕES DE SELEÇÃO DE ITENS
 function selecionarPrato(botao) {
-	const selecionado = document.querySelector(".bloco-prato .selecionado");
+	const selecionadoAnteriormente = document.querySelector(
+		".bloco-prato .selecionado"
+	);
+	const iconeAnterior = document.querySelector(
+		".bloco-prato .selecionado .icone"
+	);
 
-	if (selecionado !== null) {
-		selecionado.classList.remove("selecionado");
+	if (selecionadoAnteriormente !== null) {
+		selecionadoAnteriormente.classList.remove("selecionado");
+		iconeAnterior.classList.add("hide");
 	}
 
 	//dando o usuario a possibilidade de deselecionar
-	if (selecionado === botao) {
+	if (selecionadoAnteriormente === botao) {
 		botao.classList.remove("selecionado");
+		iconeAnterior.classList.add("hide");
 	} else {
 		botao.classList.add("selecionado");
+		const icone = document.querySelector(
+			".bloco-prato .selecionado .icone"
+		);
+		icone.classList.remove("hide");
 	}
 
 	liberarBotao();
 }
 function selecionarBebida(botao) {
 	const selecionado = document.querySelector(".bloco-bebida .selecionado");
+	const iconeAnterior = document.querySelector(
+		".bloco-bebida .selecionado .icone"
+	);
 
-	if (selecionado !== null) {
-		selecionado.classList.remove("selecionado");
+	if (selecionadoAnteriormente !== null) {
+		selecionadoAnteriormente.classList.remove("selecionado");
+		iconeAnterior.classList.add("hide");
 	}
 
 	//dando o usuario a possibilidade de deselecionar
-	if (selecionado === botao) {
+	if (selecionadoAnteriormente === botao) {
 		botao.classList.remove("selecionado");
+		iconeAnterior.classList.add("hide");
 	} else {
 		botao.classList.add("selecionado");
+		const icone = document.querySelector(
+			".bloco-prato .selecionado .icone"
+		);
+		icone.classList.remove("hide");
 	}
 
 	liberarBotao();
 }
 function selecionarSobremesa(botao) {
 	const selecionado = document.querySelector(".bloco-sobremesa .selecionado");
+	const iconeAnterior = document.querySelector(
+		".bloco-sobremesa .selecionado .icone"
+	);
 
-	if (selecionado !== null) {
-		selecionado.classList.remove("selecionado");
+	if (selecionadoAnteriormente !== null) {
+		selecionadoAnteriormente.classList.remove("selecionado");
+		iconeAnterior.classList.add("hide");
 	}
 
 	//dando o usuario a possibilidade de deselecionar
-	if (selecionado === botao) {
+	if (selecionadoAnteriormente === botao) {
 		botao.classList.remove("selecionado");
+		iconeAnterior.classList.add("hide");
 	} else {
 		botao.classList.add("selecionado");
+		const icone = document.querySelector(
+			".bloco-prato .selecionado .icone"
+		);
+		icone.classList.remove("hide");
 	}
 
 	liberarBotao();
