@@ -27,7 +27,7 @@
 						<h1 class="titulo-bloco">Primeiro, seu prato</h1>
 						<div class="bloco-opcoes">
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-lasanha.webp"
 									alt="foto de lasanha" />
@@ -35,10 +35,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-bife.webp"
 									alt="foto de lasanha" />
@@ -46,10 +48,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-escondidinho.webp"
 									alt="foto de escondidinho" />
@@ -57,10 +61,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-feijoada.jpg"
 									alt="foto de feijoada" />
@@ -68,10 +74,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-torta.jpg"
 									alt="foto de torta de frango" />
@@ -79,10 +87,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-macarrao.jpg"
 									alt="foto de macarrão" />
@@ -90,10 +100,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-nhoque.webp"
 									alt="foto de nhoque" />
@@ -101,10 +113,12 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarPrato(this)" class="opcao">
 								<img
 									src="imagens/prato-peixe.jpg"
 									alt="foto de peixe assado" />
@@ -112,7 +126,9 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -122,77 +138,93 @@
 						<h1 class="titulo-bloco">Agora, sua bebida</h1>
 						<div class="bloco-opcoes">
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-dellvale.webp"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Suco Dell Vale</p>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-coca.webp"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Coca-cola</p>
 								<p class="descricao">Lata 250ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-coca-zero.webp"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Coca-cola zero</p>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-pepsi.jpg"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Pepsi</p>
 								<p class="descricao">Lata 250ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-fanta.webp"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Fanta</p>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-kuat.webp"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Kuat</p>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-redbull.webp"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Redbull</p>
 								<p class="descricao">Lata 500ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div onclick="selecionarBebida(this)" class="opcao">
 								<img
 									src="imagens/bebida-ice.jpg"
 									alt="foto de lasanha" />
 								<p class="titulo-prato">Ice</p>
 								<p class="descricao">Lata 500ml</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -202,7 +234,9 @@
 						<h1 class="titulo-bloco">Por fim, sua sobremesa</h1>
 						<div class="bloco-opcoes">
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -210,10 +244,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -221,10 +259,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -232,10 +274,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -243,10 +289,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -254,10 +304,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -265,10 +319,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -276,10 +334,14 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 							<!---- N° OPCAO ---->
-							<div class="opcao">
+							<div
+								onclick="selecionarSobremesa(this)"
+								class="opcao">
 								<img
 									src="imagens/lasanha.webp"
 									alt="foto de lasanha" />
@@ -287,14 +349,21 @@
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco">R$ 21,98</p>
+								<p class="preco-rs">
+									R$ <span class="preco"> 21.70 </span>
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- BARRA INFERIOR -->
-				<div class="barra-inferior" onclick="enviarMensagemWpp()">
-					<button>Selecione os 3 itens para fechar o pedido</button>
+				<div class="barra-inferior">
+					<button
+						class="botao"
+						onclick="enviarMensagemWpp()"
+						disabled>
+						Selecione os 3 itens para fechar o pedido
+					</button>
 				</div>
 			</div>
 		</div>
