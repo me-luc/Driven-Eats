@@ -119,7 +119,8 @@ h2 {
 	background: #ffffff;
 	border-radius: 9px;
 
-	padding: 14px;
+	padding: 10px;
+	border: 5px solid white;
 	margin-right: 16px;
 	box-sizing: border-box;
 
@@ -176,7 +177,7 @@ h2 {
 
 /*--- CLASSES APOIO JS ---*/
 .selecionado {
-	background-color: #cf2b2b;
+	border: 5px solid #32b72f;
 }
 .habilitado {
 	background: #32b72f;
