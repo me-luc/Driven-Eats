@@ -6,19 +6,17 @@ function enviarMensagemWpp() {
 
 //FUNÇÃO QUE RETORNA OS DADOS DO PEDIDO
 function meuPedido() {
-	let prato = document.querySelector(".bloco-prato .selected .titulo-prato");
+	let prato = document.querySelector(
+		".bloco-prato .selecionado .titulo-prato"
+	).innerHTML;
 	let bebida = document.querySelector(
-		".bloco-bebida .selected .titulo-prato"
-	);
+		".bloco-bebida .selecionado .titulo-prato"
+	).innerHTML;
 	let sobremesa = document.querySelector(
-		".bloco-sobremesa .selected .titulo-prato"
-	);
+		".bloco-sobremesa .selecionado .titulo-prato"
+	).innerHTML;
 	let total = calcularPreco();
-	let minhaString = `Olá, gostaria de fazer o pedido:
-					\n- Prato: ${prato} 
-					\n- Bebida: ${bebida}
-					\n- Sobremesa: ${sobremesa}
-					\nTotal: R$ ${total}`;
+	let minhaString = `Olá, gostaria de fazer o pedido: \n- Prato: ${prato} \n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total}`;
 	return minhaString;
 }
 
@@ -64,7 +62,9 @@ function selecionarPrato(botao) {
 	liberarBotao();
 }
 function selecionarBebida(botao) {
-	const selecionado = document.querySelector(".bloco-bebida .selecionado");
+	const selecionadoAnteriormente = document.querySelector(
+		".bloco-bebida .selecionado"
+	);
 	const iconeAnterior = document.querySelector(
 		".bloco-bebida .selecionado .icone"
 	);
@@ -81,7 +81,7 @@ function selecionarBebida(botao) {
 	} else {
 		botao.classList.add("selecionado");
 		const icone = document.querySelector(
-			".bloco-prato .selecionado .icone"
+			".bloco-bebida .selecionado .icone"
 		);
 		icone.classList.remove("hide");
 	}
@@ -89,7 +89,9 @@ function selecionarBebida(botao) {
 	liberarBotao();
 }
 function selecionarSobremesa(botao) {
-	const selecionado = document.querySelector(".bloco-sobremesa .selecionado");
+	const selecionadoAnteriormente = document.querySelector(
+		".bloco-sobremesa .selecionado"
+	);
 	const iconeAnterior = document.querySelector(
 		".bloco-sobremesa .selecionado .icone"
 	);
@@ -106,7 +108,7 @@ function selecionarSobremesa(botao) {
 	} else {
 		botao.classList.add("selecionado");
 		const icone = document.querySelector(
-			".bloco-prato .selecionado .icone"
+			".bloco-sobremesa .selecionado .icone"
 		);
 		icone.classList.remove("hide");
 	}
@@ -132,6 +134,7 @@ function liberarBotao() {
 		selecionadoSobremesa !== null
 	) {
 		const botao = document.querySelector(".barra-inferior button");
+		botao.innerHTML = "Fechar pedido";
 		botao.removeAttribute("disabled");
 		botao.classList.add("habilitado");
 	}
@@ -143,6 +146,7 @@ function liberarBotao() {
 		selecionadoSobremesa === null
 	) {
 		const botao = document.querySelector(".botao");
+		botao.innerHTML = "Selecione os 3 itens para fechar o pedido";
 		botao.classList.remove("habilitado");
 		botao.setAttribute("disabled", "");
 	}

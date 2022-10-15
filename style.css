@@ -30,6 +30,11 @@ body {
 
 	box-sizing: border-box;
 	padding-left: 25px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 .topo h1 {
 	font-family: "Righteous";
@@ -52,21 +57,19 @@ h2 {
 
 /*---- CONTAINER OPCOES ----*/
 .container-opcoes {
-	margin-top: 25px;
+	margin-top: 102px;
+	margin-bottom: 90px;
 }
 /*------ GERAL BLOCOS ------*/
 .bloco-prato,
 .bloco-bebida,
 .bloco-sobremesa {
-	margin: 18px 0;
+	margin-top: 20px;
 }
 
 /*---- OPCAO PRATO ----*/
 
 /*---- OPCAO BEBIDA ----*/
-/*.bloco-bebida .descricao {
-	margin: 10px 0;
-}*/
 .bloco-bebida img {
 	object-fit: scale-down;
 }
@@ -89,6 +92,7 @@ h2 {
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
 }
 .botao {
 	width: 75%;
@@ -191,8 +195,6 @@ h2 {
 
 	bottom: 9px;
 	right: 6px;
-
-	z-index: 1;
 }
 
 .hide {

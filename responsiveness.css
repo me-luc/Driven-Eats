@@ -5,7 +5,15 @@
 		padding-left: 50px;
 	}
 	.container-opcoes {
-		margin-left: 50px;
+		margin-left: 25px;
+	}
+	.titulo-bloc {
+		margin: 0;
+	}
+	.bloco-prato,
+	.bloco-bebida,
+	.bloco-sobremesa {
+		margin: 0;
 	}
 }
 
