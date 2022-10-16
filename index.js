@@ -1,19 +1,65 @@
 //ENVIAR MENSAGEM P/ WHATSAPP
 function enviarMensagemWpp() {
-	let minhaString = encodeURIComponent(meuPedido());
+	let nome = prompt("Digite seu nome: ");
+	let endereco = prompt("Digite seu endereço: ");
+	let minhaString = encodeURIComponent(
+		meuPedido() + `\n\nNome: ${nome}\nEndereço: ${endereco}`
+	);
+
 	window.open("https://wa.me/5571996559339?text=" + minhaString);
+}
+
+function atualizarPagConfimacao() {
+	const descricaoPrato = document.querySelector(".prato .descricao");
+	const descricaoBebida = document.querySelector(".bebida .descricao");
+	const descricaoSobremesa = document.querySelector(".sobremesa .descricao");
+	const precoPrato = document.querySelector(".prato .price");
+	const precoBebida = document.querySelector(".bebida .price");
+	const precoSobremesa = document.querySelector(".sobremesa .price");
+	const precoTotal = document.querySelector(".total .price");
+
+	//atualizando dados da pagina
+	descricaoBebida.innerHTML = document.querySelector(
+		".bloco-bebida .selecionado .titulo-opcao"
+	).innerHTML;
+	descricaoPrato.innerHTML = document.querySelector(
+		".bloco-prato .selecionado .titulo-opcao"
+	).innerHTML;
+	descricaoSobremesa.innerHTML = document.querySelector(
+		".bloco-sobremesa .selecionado .titulo-opcao"
+	).innerHTML;
+
+	precoPrato.innerHTML = document.querySelector(
+		".bloco-prato .selecionado .preco"
+	).innerHTML;
+	precoBebida.innerHTML = document.querySelector(
+		".bloco-bebida .selecionado .preco"
+	).innerHTML;
+	precoSobremesa.innerHTML = document.querySelector(
+		".bloco-sobremesa .selecionado .preco"
+	).innerHTML;
+	precoTotal.innerHTML = calcularPreco();
+
+	//após atualizar dados da pagina mostra a div
+	const div = document.querySelector(".tela-confirmacao");
+	div.classList.remove("hide");
+}
+
+function cancelarPedido() {
+	const div = document.querySelector(".tela-confirmacao");
+	div.classList.add("hide");
 }
 
 //FUNÇÃO QUE RETORNA OS DADOS DO PEDIDO
 function meuPedido() {
 	let prato = document.querySelector(
-		".bloco-prato .selecionado .titulo-prato"
+		".bloco-prato .selecionado .titulo-opcao"
 	).innerHTML;
 	let bebida = document.querySelector(
-		".bloco-bebida .selecionado .titulo-prato"
+		".bloco-bebida .selecionado .titulo-opcao"
 	).innerHTML;
 	let sobremesa = document.querySelector(
-		".bloco-sobremesa .selecionado .titulo-prato"
+		".bloco-sobremesa .selecionado .titulo-opcao"
 	).innerHTML;
 	let total = calcularPreco();
 	let minhaString = `Olá, gostaria de fazer o pedido: \n- Prato: ${prato} \n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total}`;

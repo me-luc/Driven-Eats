@@ -10,13 +10,14 @@
 	.titulo-bloc {
 		margin: 0;
 	}
-	.bloco-prato,
-	.bloco-bebida,
-	.bloco-sobremesa {
-		margin: 0;
-	}
 }
 
 body {
 	min-width: 390px;
+}
+
+@media (max-width: 400px) {
+	.quadrado-confirmacao {
+		width: 90%;
+	}
 }
