@@ -102,7 +102,6 @@ h2 {
 	border: none;
 	border-radius: 50px;
 	box-sizing: border-box;
-	padding: 0 50px 0 50px;
 
 	font-family: "Roboto";
 	font-style: normal;
@@ -223,6 +222,10 @@ h2 {
 	padding: 24px 28px;
 
 	color: #ffffff;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .quadrado-confirmacao h1 {
 	font-family: "Roboto";
@@ -233,7 +236,7 @@ h2 {
 	text-align: center;
 }
 .quadrado-confirmacao button {
-	width: 329px;
+	width: 325px;
 	height: 52px;
 
 	background: #ffffff;
@@ -256,15 +259,15 @@ h2 {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 23px;
-	text-align: center;
 }
 .cancel:hover {
 	cursor: pointer;
 }
 .bloco {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin: 13px 0;
+	margin: 5px 0;
 }
 .bloco:nth-of-type(1) {
 	margin-top: 28px;
