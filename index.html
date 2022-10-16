@@ -22,20 +22,25 @@
 				<!-- CONTAINER DE OPCOES -->
 				<div class="container-opcoes">
 					<!-- BLOCO PRATO -->
-					<div class="bloco-prato">
+					<div class="bloco-prato" data-test="dishes">
 						<!-- TITULO DO BLOCO -->
 						<h1 class="titulo-bloco">Primeiro, seu prato</h1>
 						<div class="bloco-opcoes">
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-lasanha.webp"
 									alt="foto de lasanha" />
-								<p class="titulo-opcao">Lasanha</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Lasanha
+								</h1>
 								<p class="descricao">
 									Um pouco de batata, um pouco de salada
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 29.70 </span>
 								</p>
 								<ion-icon
@@ -43,15 +48,20 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-bife.webp"
 									alt="foto de lasanha" />
-								<p class="titulo-opcao">Bife</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Bife
+								</h1>
 								<p class="descricao">
 									Bife bem passado, tamanho médio.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 21.98 </span>
 								</p>
 								<ion-icon
@@ -59,15 +69,20 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-escondidinho.webp"
 									alt="foto de escondidinho" />
-								<p class="titulo-opcao">Escondidinho</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Escondidinho
+								</h1>
 								<p class="descricao">
 									Carne muida e queijo. Serve 3 pessoas.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 17.56 </span>
 								</p>
 								<ion-icon
@@ -75,15 +90,20 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-feijoada.jpg"
 									alt="foto de feijoada" />
-								<p class="titulo-opcao">Feijoada</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Feijoada
+								</h1>
 								<p class="descricao">
 									Feijoada caseira. Serve 2 pessoas.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 35.10 </span>
 								</p>
 								<ion-icon
@@ -91,15 +111,20 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-torta.jpg"
 									alt="foto de torta de frango" />
-								<p class="titulo-opcao">Torta de frango</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Torta de frango
+								</h1>
 								<p class="descricao">
 									Torta de frango tradicional.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 20.85 </span>
 								</p>
 								<ion-icon
@@ -107,15 +132,20 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-macarrao.jpg"
 									alt="foto de macarrão" />
-								<p class="titulo-opcao">Macarrão</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Macarrão
+								</h1>
 								<p class="descricao">
 									Macarrão parafuso com frango desfiado.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 16.88 </span>
 								</p>
 								<ion-icon
@@ -123,13 +153,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-nhoque.webp"
 									alt="foto de nhoque" />
-								<p class="titulo-opcao">Nhoque de batata</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Nhoque de batata
+								</h1>
 								<p class="descricao">Massa caseira deliciosa</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 19.99 </span>
 								</p>
 								<ion-icon
@@ -137,15 +172,20 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarPrato(this)" class="opcao">
+							<div
+								onclick="selecionarPrato(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/prato-peixe.jpg"
 									alt="foto de peixe assado" />
-								<p class="titulo-opcao">Peixe assado</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Peixe assado
+								</h1>
 								<p class="descricao">
 									Peixe assado com cebolas.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 32.62 </span>
 								</p>
 								<ion-icon
@@ -154,19 +194,25 @@
 							</div>
 						</div>
 					</div>
+
 					<!-- BLOCO BEBIDA -->
-					<div class="bloco-bebida">
+					<div class="bloco-bebida" data-test="drinks">
 						<!-- TITULO DO BLOCO -->
 						<h1 class="titulo-bloco">Agora, sua bebida</h1>
 						<div class="bloco-opcoes">
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-dellvale.webp"
 									alt="foto de dell vale suco" />
-								<p class="titulo-opcao">Suco Dell Vale</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Suco Dell Vale
+								</h1>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 7.70 </span>
 								</p>
 								<ion-icon
@@ -174,13 +220,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-coca.webp"
 									alt="foto de coca refrigerante" />
-								<p class="titulo-opcao">Coca-cola</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Coca-cola
+								</h1>
 								<p class="descricao">Lata 250ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 9.20 </span>
 								</p>
 								<ion-icon
@@ -188,13 +239,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-coca-zero.webp"
 									alt="foto de coca refrigerante" />
-								<p class="titulo-opcao">Coca-cola zero</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Coca-cola zero
+								</h1>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 7.98 </span>
 								</p>
 								<ion-icon
@@ -202,13 +258,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-pepsi.png"
 									alt="foto de pepsi refrigerante" />
-								<p class="titulo-opcao">Pepsi</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Pepsi
+								</h1>
 								<p class="descricao">Lata 250ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 8.10 </span>
 								</p>
 								<ion-icon
@@ -216,13 +277,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-fanta.jpg"
 									alt="foto de fanta refrigerante" />
-								<p class="titulo-opcao">Fanta</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Fanta
+								</h1>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 6.98 </span>
 								</p>
 								<ion-icon
@@ -230,13 +296,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-kuat.webp"
 									alt="foto de kuat refrigerante" />
-								<p class="titulo-opcao">Kuat</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Kuat
+								</h1>
 								<p class="descricao">Lata 350ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 7.67 </span>
 								</p>
 								<ion-icon
@@ -245,13 +316,18 @@
 							</div>
 
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-redbull.webp"
 									alt="foto de redbull lata" />
-								<p class="titulo-opcao">Redbull</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Redbull
+								</h1>
 								<p class="descricao">Lata 500ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 21.70 </span>
 								</p>
 								<ion-icon
@@ -259,13 +335,18 @@
 									name="checkmark-circle"></ion-icon>
 							</div>
 							<!---- N° OPCAO ---->
-							<div onclick="selecionarBebida(this)" class="opcao">
+							<div
+								onclick="selecionarBebida(this)"
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/bebida-ice.jpg"
 									alt="foto de ice lata" />
-								<p class="titulo-opcao">Ice</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Ice
+								</h1>
 								<p class="descricao">Lata 500ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 13.84 </span>
 								</p>
 								<ion-icon
@@ -274,21 +355,25 @@
 							</div>
 						</div>
 					</div>
+
 					<!-- BLOCO SOBREMESA -->
-					<div class="bloco-sobremesa">
+					<div class="bloco-sobremesa" data-test="desserts">
 						<!-- TITULO DO BLOCO -->
 						<h1 class="titulo-bloco">Por fim, sua sobremesa</h1>
 						<div class="bloco-opcoes">
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-bolo.webp"
 									alt="foto de bolo" />
-								<p class="titulo-opcao">Bolo de chocolate</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Bolo de chocolate
+								</h1>
 								<p class="descricao">Serve 1 pessoa</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 12.71 </span>
 								</p>
 								<ion-icon
@@ -298,15 +383,18 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-mousse.webp"
 									alt="foto de mousse de morango" />
-								<p class="titulo-opcao">Mousse morango</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Mousse morango
+								</h1>
 								<p class="descricao">
 									Mousse tradicional. Serve até 3 pessoas.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 8.56 </span>
 								</p>
 								<ion-icon
@@ -316,15 +404,18 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-manjar.webp"
 									alt="foto de manjar de coco" />
-								<p class="titulo-opcao">Manjar de coco</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Manjar de coco
+								</h1>
 								<p class="descricao">
 									Manjar de coco e ameixas.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 7.90 </span>
 								</p>
 								<ion-icon
@@ -334,13 +425,16 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-pudim.jpg"
 									alt="foto de pudim" />
-								<p class="titulo-opcao">Pudim</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Pudim
+								</h1>
 								<p class="descricao">Pudim delicioso.</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 11.40 </span>
 								</p>
 								<ion-icon
@@ -350,13 +444,16 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-sorvete.webp"
 									alt="foto de sorvete de morango" />
-								<p class="titulo-opcao">Sorvete de banana</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Sorvete de banana
+								</h1>
 								<p class="descricao">Pote de 500ml</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 9.90 </span>
 								</p>
 								<ion-icon
@@ -366,15 +463,18 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-salada.jpg"
 									alt="foto de salada de fruta" />
-								<p class="titulo-opcao">Salada de fruta</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Salada de fruta
+								</h1>
 								<p class="descricao">
 									Tradicional com leite condesando.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 6.98 </span>
 								</p>
 								<ion-icon
@@ -384,15 +484,18 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-cheesecake.webp"
 									alt="foto de Cheesecake" />
-								<p class="titulo-opcao">Cheesecake</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Cheesecake
+								</h1>
 								<p class="descricao">
 									Cheesecake clássico com morango.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 15.12 </span>
 								</p>
 								<ion-icon
@@ -402,15 +505,18 @@
 							<!---- N° OPCAO ---->
 							<div
 								onclick="selecionarSobremesa(this)"
-								class="opcao">
+								class="opcao"
+								data-test="food-option">
 								<img
 									src="imagens/sobremesa-pave.webp"
 									alt="foto de pavê" />
-								<p class="titulo-opcao">Pavê de coco</p>
+								<h1 class="titulo-opcao" data-test="food-title">
+									Pavê de coco
+								</h1>
 								<p class="descricao">
 									Pavê de coco e chocolate.
 								</p>
-								<p class="preco-rs">
+								<p class="preco-rs" data-test="food-price">
 									R$ <span class="preco"> 11.01 </span>
 								</p>
 								<ion-icon
@@ -450,7 +556,9 @@
 							<h2 class="price">R$ 0</h2>
 						</div>
 
-						<button onclick="enviarMensagemWpp()">
+						<button
+							onclick="enviarMensagemWpp()"
+							data-test="finish-button">
 							Tudo certo, pode pedir!
 						</button>
 						<p class="cancel" onclick="cancelarPedido()">
