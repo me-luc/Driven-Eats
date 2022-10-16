@@ -77,7 +77,7 @@ function calcularPreco() {
 	let sobremesa = Number(
 		document.querySelector(".bloco-sobremesa .selecionado .preco").innerHTML
 	);
-	return prato + bebida + sobremesa;
+	return (prato + bebida + sobremesa).toFixed(2);
 }
 //FUNÇÕES DE SELEÇÃO DE ITENS
 function selecionarPrato(botao) {
