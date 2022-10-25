@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here](https://your-live-site-url.com](https://me-luc.github.io/Driven-Eats/)
+- Live Site URL: [Click here](https://me-luc.github.io/Driven-Eats/)
 
 ## My process
 
